@@ -3,15 +3,11 @@ import React, { useRef } from 'react';
 import './styles.css';
 
 const R3 = () => {
-
   const modalRef = useRef();
   const playerRef = useRef();
 
   const openModal = () => {
-    modalRef.current.style.display = "block";
-    const player = playerRef.current;
-    
-  
+    modalRef.current.style.display = "block";  
   }
 
   const closeModal = () => {
