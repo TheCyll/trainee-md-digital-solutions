@@ -1,0 +1,112 @@
+.table-wrapper {
+  width: 100%;
+  max-width: 90%;
+}
+
+.table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table-head {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: none;
+  overflow: hidden;
+}
+
+.table-row {
+  display: block;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-bottom: 3px solid gray;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.head-cell, .body-cell {
+  padding: 30px;
+  text-align: center;
+}
+
+.head-cell {
+  font-size: 0.8rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: white;
+  padding: 50px 0;
+  font-weight: 300;
+}
+
+.body-cell {
+  border-bottom: 1px solid gray;
+  display: block;
+  font-size: 0.8rem;
+  text-align: right;
+  color: gray;
+  overflow-wrap: break-word;
+}
+
+.body-cell::before {
+  content: attr(data-label);
+  float: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: gray;
+}
+
+.body-cell:last-child {  
+  border-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .table-wrapper {
+    max-width: initial;
+    overflow: hidden;
+  }
+
+  .table-head {
+    width: initial;
+    height: initial;
+    position: initial;
+    margin: 0;
+    margin-bottom: 40px;
+    overflow: initial;
+    background-color: var(--main-dark);
+  }
+
+  .table-row {
+    display: table-row;
+    margin-bottom: initial;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-right: 2px solid #ddd;
+  }
+
+  .table-row:hover {
+    background-color: #e1e1e1;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  .body-cell {
+    display: table-cell;
+    padding: 30px 40px;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+  }  
+
+  .body-cell::before {
+    content: none;
+  }  
+}
