@@ -9,7 +9,6 @@ const R4 = () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/posts');
     const data = await response.json();    
     setPosts(data);
-    console.log(data);
   }, []);
 
   return (
