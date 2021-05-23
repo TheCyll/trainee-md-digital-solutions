@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# MD DIGITAL SOLUTIONS
+
+Bienvenidos al reto trainee de MD Digital Solutions.
+El proyecto está desarrollado en React, y se puede ver el entorno de desarrollo usando el comando `yarn start`.
+
+Dejo como referencia el README de Create React App: 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
